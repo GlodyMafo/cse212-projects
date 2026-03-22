@@ -35,6 +35,12 @@ public class Translator
     public string Translate(string fromWord)
     {
         // ADD YOUR CODE HERE
-        return "";
+        string newWord = "???";
+
+        if (_words.ContainsKey(fromWord))
+        {
+            newWord = _words[fromWord];
+        }
+        return newWord;
     }
 }
